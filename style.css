@@ -1,0 +1,145 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-image: url("plant3_blur.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Prompt', sans-serif;
+}
+
+/*set top page*/
+#top-page{
+    text-align: center;
+    color: white;
+    background-image: url("plant2.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+#top-page p{
+    font-size: 100px;
+}
+
+/*set header*/
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(64, 64, 64);
+    opacity: 0.8;
+}
+
+/*make item float left*/
+#header ul li {
+    float: right;
+}
+
+/*set each item*/
+#header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+/* change background color when mouse pointing each item*/
+#header ul li a:hover {
+    background-color: rgb(0, 170, 70);
+    transition: 0.5s;
+}
+
+/*set content*/
+#content{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(92, 92, 92)
+}
+
+/*set footer*/
+#footer{
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    opacity: 0.8;
+}
+
+/*icon footer*/
+#footer p{
+    margin: 0;
+    display: inline-block;
+    padding: 75px 0 0 0;\
+}
+
+#footer p img{
+    opacity: 0.7;
+}
+
+#footer p img:hover{
+    opacity: 1;
+    /*transition: 0.3s;*/
+}
+
+/*for adding to header*/
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+/*go back to top*/
+#go-top{
+    top: 90%;
+    left: 95%;
+    position: fixed;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+/*to set visible for go-top*/
+.visible{
+    visibility: visible !important;
+    background-color: rgb(0, 170, 70);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/*mouse pointing for go-top*/
+#go-top:hover{
+    opacity: 1;
+}
+
+/*set margin for content when scrolling*/
+/*.mar{
+    margin: 61px 10px 10px 10px !important;
+}*/
+
+
+.test{
+    width: 100vw;
+    height: 50vh;
+}
+
+.container_t1{
+    float: left;
+    width: 39%;
+    height: 50vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
+}
+.container_t2{
+    float: right;
+    width: 60%;
+    height: 50vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
+}
