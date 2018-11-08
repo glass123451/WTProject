@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo-green.png">
+    <link rel="shortcut icon" href="ex/logo_green.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
-    <script type="text/javascript" src="event.js"></script>
+    <script type="text/javascript" src="event_file/event_dirt.js"></script>
     <title>PlantTime</title>
 </head>
 
 <body>
     <!-- div for top of the page -->
     <div id="top-page">
-        <img src="logo-white.png">
-        <p>การดูแลรักษาพืช</p>
+        <div class="fade">
+            <img src="ex/logo_white.png" height="300px">
+            <p>การดูแลรักษาต้นไม้</p>
+        </div>
     </div>
 
     <!-- check position-->
@@ -23,31 +25,143 @@
 
     <!-- div for header -->
     <div id="header">
-        <ul>
-            <li><a href="kill.html">กำจัดศัตรูพืช</a></li>
-            <li style="background-color: rgb(0, 170, 70);"><a href="#">ดิน</a></li>
-            <li><a href="fertilizer.html">ใส่ปุ๋ย</a></li>
-            <li><a href="water.html">ให้น้ำ</a></li>
-            <li><a href="plant.html">ตัวอย่างพันธุ์ไม้</a></li>
-            <li><a href="index.html"><img src="home.png" width="20px" height="16px"></a></li>
-        </ul>
-    </div>
-
+            <ul>
+                <li><a href="kill.html">กำจัดศัตรูพืช</a></li>
+                <li style="background-color: rgb(0, 170, 70);"><a>การเลือกดิน</a></li>
+                <li><a href="fertilizer.html">การใส่ปุ๋ย</a></li>
+                <li><a href="water.html">การให้น้ำ</a></li>
+                <li><a href="plant.html">ตัวอย่างพันธุ์ไม้</a></li>
+                <li><a href="index.html"><img src="ex/home.png" width="20px" height="16px"></a></li>
+            </ul>
+        </div>
+    <!-- <div class="top-content">
+        <div class="container_t"></div>
+        <div class="container_t"></div>
+    </div> -->
     <!-- div for adding content -->
-    <div id="content">
-        
-    </div>
+    <div id="earth">
+            <div class="container_t1_dirt">
+                <p><b><font size="7">สูตรผสมดิน</font></b><br></p>
+                    <p>
+                    <b>ดินปลูกต้นไม้ทั่วๆไป</b>
+                    <ul>
+                        <li>ดินร่วน 1 ส่วน</li>
+                        <li>ใบใม้ผุ 1 ส่วน</li>
+                        <li>ปุ๋ยหมักหรือปุ๋ยเทศบาล 1 ส่วน</li>
+                    </ul>
+                    <b>ดินปลูกไม้ดอกกระถาง</b>
+                    <ul>
+                        <li>ดินใบก้ามปู 1 ส่วน</li>
+                        <li>ปุ๋ยคอก(ต้องเก่าๆ) 1 ส่วน</li>
+                        <li>ดินร่วน 1 ส่วน</li>
+                        <li>กาบมะพร้าวสับ 1 ส่วน</li>
+                    </ul>
+                    <b>ดินปลูกสำหรับปลูกโป้ยเซียน</b>
+                    <ul>
+                        <li>ดินขุยไผ่ผสมแกลบหรือทรายหยาบ 1 ส่วน</li>
+                        <li>ถ่านป่น 1 ส่วน</li>
+                        <li>อิฐมอญทุบเล็กๆ 2 ส่วน</li>
+                        <li>เปลีอกถั่วและใบทองหลางหรือใบก้ามปูผุๆ 2 ส่วน</li>
+                    </ul>
+                    <b>ดินสำหรับปลูกแคคตัส และพืชอวบน้ำ</b>
+                    <ul>
+                        <li>ดินร่วน (ผึ่งแดด 7 วัน) 2 ส่วน</li>
+                        <li>ทรายหยาบ 3 ส่วน</li>
+                        <li>ถ่านปุ่น 1 ส่วน</li>
+                        <li>ใบก้ามปูผุ ๆ 1 ส่วน</li>
+                        <li>ปูนขาวเล็กน้อย</li>
+                    </ul>
+                    <b>ดินสำหรับปลูกเบญจมาศ โกสน ปาล์ม</b>
+                    <ul>
+                        <li>ดินร่วน</li>
+                        <li>ทรายหยาบ</li>
+                        <li>ปุ๋ยคอกเก่า ๆ</li>
+                        <li>ปุ๋ยหมักหรือปุ๋ยเทศบาล</li>
+                        <li>กระดูกป่นเล็กน้อย/<li>
+                    </ul>
+                    <b>ดินสำหรับปลูกเฟิร์น</b>
+                    <ul>
+                        <li>ดินเผาหรือร่วน 1 ส่วน</li>
+                        <li>ทรายละเอียด 1 ส่วน</li>
+                        <li>ศษอิฐหักป่น 1 ส่วน</li>
+                        <li>ใบก้ามปูผุ ๆ 1 ส่วน</li>
+                        <li>ปุ๋ยคอกเก่า 1/2 ส่วน</li>
+                        <li>ปูนขาว 1/4 ส่วน</li>
+                    </ul>
+                    <b>ดินสำหรับปลูกบอน ว่านต่าง ๆ ดาดตะกั่ว</b>
+                    <ul>
+                        <li>ดินร่วน 6 ส่วน</li>
+                        <li>ทราย 4 ส่วน</li>
+                        <li>ปุ๋ยคอก 1 ส่วน</li>
+                        <li>ใบมะขามผุ ๆ 1 ส่วน</li>
+                    </ul>
+                    <b>ดินสำหรับปลูกคล้า และมารานต้า</b>
+                    <ul>
+                        <li>ดินร่วน 2 ส่วน</li>
+                        <li>ทราย 2 ส่วน</li>
+                        <li>ขุยมะพร้าว 2 ส่วน</li>
+                        <li>แกลบ 1 ส่วน</li>
+                        <li>ปุ๋ยคอก 1 ส่วน</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="container_t2_dirt">
+                <p><b>ชนิดของดิน</b><br></p>
+                <p>1. ดินเหนียว คือดินที่มีเนื้อดินละเอียดจับกันเป็นก้อนเหนียว มีช่องที่จะทำให้อากาศและน้ำผ่านไปได้น้อยมาก ดินชนิดนี้ไม่เหมาะแก่การปลูกต้นไม้ เพราะรากหาอาหารได้ยากและทำให้เกิดโรครากเน่า ต้นไม้ไม่เจริญเติบโต ดังนั้น ถ้าดินที่จะปลูกไม้ประดับนั้นเป็นดินเหนียวจำเป็นจะต้องทำดินเหนียวนั้นให้ร่วนซุยเสียก่อน</p>
+                <p>2. ดินทราย เป็นดินที่อากาศผ่านได้สะดวก อุ้มนํ้าได้น้อย ไม่พอกับความต้องการของพืช อาหารของพืชมีน้อย เมื่อปลูกต้นไม้ก็จะทำให้ไม่เจริญเติบโต จำเป็นจะต้องปรับปรุงดินทรายนั้นให้ดีขึ้นโดยใส่ดินเหนียวและอินทรีย์วัตถุลงไป</p>
+                <p>3. ดินร่วน เป็นดินที่เหมาะสมแก่การปลูกต้นไม้ เพราะมีอินทรีย์วัตถุผสมอยู่แล้ว และรากพืชสามารถชอนไชได้</p>
+                <p>4. ฮิวมัส ฮิวมัส คือ ซากพืชซากสัตว์ที่ตายและเน่าเปื่อยแล้ว อาจได้จากใบหญ้า ใบไม้
+                ซึ่งกองทับถมกันอยู่นาน ๆ จนเน่าเปื่อย มูลสัตว์ เช่น มูลวัว ควาย เป็ด ไก่ และหมู เมื่อใส่ไปในดินก็ทำให้ดินดีขึ้น เพราะมูลสัตว์
+                เมื่อปนอยู่ในดินก็เน่าเปื่อยกลายเป็นฮิวมัส ดินอุดมมักมีสีดำ เมื่อแห้งไม่แข็งเหมือนดินเหนียว น้ำซึมผ่านได้พอ
+                สมควร เป็นดินที่พืชส่วนมากชอบ</p>
+                <p>5. ดินอุดม ดินอุดม เป็นดินที่อุ้มน้ำไว้ได้ดีพอสมควร พอเหมาะที่จะทำให้ต้นไม้เจริญงอกงามดี</p>
+    
+            </div>
+        </div>
 
     <!-- div for footer -->
-    <div id="footer">
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="fb.png" width="25px" height="25px"></a></p>
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="ig.png" width="25px" height="25px"></a></p>
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="tt.png" width="25px" height="25px"></a></p>
-    </div>
+    <footer class="footer">
+
+        <p class="content1">-Contact Us-</p>
+
+        <p class="content2">
+            <a href="https://www.facebook.com/Plant-Time-213447256090531"><img src="ex/fb.png" height="30px" width="30px"></a>
+            .
+            <a href="https://www.instagram.com/pischyd/"><img src="ex/ig.png" height="30px" width="30px"></a>
+            .
+            <a href="https://twitter.com/PlantTime1"><img src="ex/tt.png" height="30px" width="30px"></a>
+        </p>
+
+        <p class="content3"><a href="https://www.facebook.com/glass123451">60070009 นายจิรพัส วงษ์พิทักษ์</a><br><a href="https://www.facebook.com/shiroi.youkai">60070033 นางสาว ธารินี แก้วประยูร</a><br><a href="https://www.facebook.com/pitchayutramudramyai">60070063 นาย พิชญุตม์ เดชหนู</a></p>
+        <p>Credit: verdeambienteorosei.com, wallpaperscraft.com</p>
+    </footer>
 
     <!-- cursor for going to top page -->
     <div id="go-top">
-        <a href="#top-page"><img src="top.png" width="50px" height="50px"></a>
+        <a href="#top-page"><img src="ex/top.png" width="50px" height="50px"></a>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var documentEl = $(document),
+                fadeElem = $('.fade');
+                
+                
+                documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+                    
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                }); 
+            });
+                
+        });
+        
+    </script>
 </body>
 </html>

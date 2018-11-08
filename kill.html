@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo-green.png">
+    <link rel="shortcut icon" href="ex/logo_green.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
-    <script type="text/javascript" src="event.js"></script>
+    <script type="text/javascript" src="event_file/event_kill.js"></script>
     <title>PlantTime</title>
 </head>
 
 <body>
     <!-- div for top of the page -->
     <div id="top-page">
-        <img src="logo-white.png">
-        <p>การดูแลรักษาพืช</p>
+        <div class="fade">
+            <img src="ex/logo_white.png" height="300px">
+            <p>การดูแลรักษาต้นไม้</p>
+        </div>
     </div>
 
     <!-- check position-->
@@ -23,31 +25,84 @@
 
     <!-- div for header -->
     <div id="header">
-        <ul>
-            <li style="background-color: rgb(0, 170, 70);"><a href="#">กำจัดศัตรูพืช</a></li>
-            <li><a href="dirt.html">ดิน</a></li>
-            <li><a href="fertilizer.html">ใส่ปุ๋ย</a></li>
-            <li><a href="water.html">ให้น้ำ</a></li>
-            <li><a href="plant.html">ตัวอย่างพันธุ์ไม้</a></li>
-            <li><a href="index.html"><img src="home.png" width="20px" height="16px"></a></li>
-        </ul>
+            <ul>
+                <li style="background-color: rgb(0, 170, 70);"><a>กำจัดศัตรูพืช</a></li>
+                <li><a href="dirt.html">การเลือกดิน</a></li>
+                <li><a href="fertilizer.html">การใส่ปุ๋ย</a></li>
+                <li><a href="water.html">การให้น้ำ</a></li>
+                <li><a href="plant.html">ตัวอย่างพันธุ์ไม้</a></li>
+                <li><a href="index.html"><img src="ex/home.png" width="20px" height="16px"></a></li>
+            </ul>
     </div>
-
+    <!-- <div class="top-content">
+        <div class="container_t"></div>
+        <div class="container_t"></div>
+    </div> -->
     <!-- div for adding content -->
-    <div id="content">
+    <div id="pest">
+            <div class="container_t5">
+                <p><b><font size="7">ศัตรูพืช</font></b><br></p>
+                    <p>&emsp;วัชพืช เป็นพืชที่ขึ้นมาเองตามธรรมชาติโดยที่ผู้ดูแลไม่ต้องการ มักสร้างความเสียหายให้พืชที่ผู้ปลูกต้องการ เช่น แย่งอาหาร หรือบดบังพืชที่เราต้องการปลูก จึงเป็นสาเหตุให้ต้องทำการกำจัด
+                    </p>
+                    <p>&emsp;แมลงศัตรูพืชนั้นมักจะทำลายการเจริญเติบโตของพืช ไม่ว่าจะเป็นการกัดกินใบหรือลำต้น การดูดน้ำเลี้ยง ล้วนทำให้พืชอ่อนแอ เจริญเติบโตช้า และเหี่ยวเฉาตายลงได้</p>
+            </div>
+            <div class="container_t6">
+                <p><b>แมลงศัตรูพืช</b><br></p>
+                <p>1. ประเภทปากกัด ได้แก่ ตั๊กแตน หนอนผีเสื้อ ฯลฯ ทำลายโดยกัดกินใบ ทำให้ต้นไม้ไม้ไม่สามารถปรุงอาหารได้ แมลงปากกัดบางชนิดกัดแทะเข้าไปถึงกิ่งก้านหรือลำต้น ทำให้ท่อน้ำท่ออาหารของต้นไม้เสียหาย วิธีกำจัดโดยการใช้ยาประเภทถูกตัวตายหรือกินตายฉีดพ่น หากพบจำนวนไม่มากให้จับทำลาย</p>
+                <p>2. ประเภทดูดน้ำเลี้ยง ได้แก่ เพลี้ยชนิดต่าง ๆ แมงมุมแดง ฯลฯ ทำลายโดยดูดน้ำเลี้ยงจากใบ แมลงปากดูดบางชนิดยังปล่อยสารพิษให้ต้นไม้ใบสีซีดเหี่ยวแห้ง ใบร่วงก่อนกำหนด และแห้งตายในที่สุด วิธีกำจัดโดยการฉีดยาประเภทถูกตัวตาย</p>
+    
+            </div>
+            <div class="container_t7">
+                    <p><b>วัชพืช</b><br></p>
+                    <p>1. หากพบจำนวนน้อย สามารถใช้วิธีการดึงถอนออกมาหรือตัดออกด้วยเครื่องมืออุปกรณ์ต่าง ๆ ช่วย เช่น การใช้เครื่องตัดหญ้า หรือกรรไกรตัดหญ้า</p>
+                    <p>2. ใช้สารเคมีป้องกันและกำจัดวัชพืช ควรใช้ด้วยความระมัดระวัง หากจำเป็นต้องใช้ยาควรกระทำอยู่ภายนอกอาคารและหลีกเลี่ยงยาที่มีอันตรายมากๆ มีฤทธิ์ตกค้างนานและมีกลิ่นรุนแรง และทิ้งไว้จนหมดกลิ่นและฤทธิ์เสียก่อน</p>
         
+                </div>
     </div>
 
     <!-- div for footer -->
-    <div id="footer">
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="fb.png" width="25px" height="25px"></a></p>
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="ig.png" width="25px" height="25px"></a></p>
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="tt.png" width="25px" height="25px"></a></p>
-    </div>
+    <footer class="footer">
+
+        <p class="content1">-Contact Us-</p>
+
+        <p class="content2">
+            <a href="https://www.facebook.com/Plant-Time-213447256090531"><img src="ex/fb.png" height="30px" width="30px"></a>
+            .
+            <a href="https://www.instagram.com/pischyd/"><img src="ex/ig.png" height="30px" width="30px"></a>
+            .
+            <a href="https://twitter.com/PlantTime1"><img src="ex/tt.png" height="30px" width="30px"></a>
+        </p>
+
+        <p class="content3"><a href="https://www.facebook.com/glass123451">60070009 นายจิรพัส วงษ์พิทักษ์</a><br><a href="https://www.facebook.com/shiroi.youkai">60070033 นางสาว ธารินี แก้วประยูร</a><br><a href="https://www.facebook.com/pitchayutramudramyai">60070063 นาย พิชญุตม์ เดชหนู</a></p>
+        <p>Credit: verdeambienteorosei.com, wallpaperscraft.com</p>
+    </footer>
 
     <!-- cursor for going to top page -->
     <div id="go-top">
-        <a href="#top-page"><img src="top.png" width="50px" height="50px"></a>
+        <a href="#top-page"><img src="ex/top.png" width="50px" height="50px"></a>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var documentEl = $(document),
+                fadeElem = $('.fade');
+                
+                
+                documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+                    
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                }); 
+            });
+                
+        });
+        
+    </script>
 </body>
 </html>

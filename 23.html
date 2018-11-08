@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ex/logo_green.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <script type="text/javascript" src="event_file/event_plant.js"></script>
+    <title>PlantTime</title>
+</head>
+
+<body>
+    <!-- div for top of the page -->
+    <div id="top-page">
+        <div class="fade">
+            <img src="ex/logo_white.png" height="300px">
+            <p>การดูแลรักษาต้นไม้</p>
+        </div>
+    </div>
+
+    <!-- check position-->
+    <div id="chk"></div>
+
+    <!-- div for header -->
+    <div id="header">
+            <ul>
+                <li><a href="kill.html">กำจัดศัตรูพืช</a></li>
+                <li><a href="dirt.html">การเลือกดิน</a></li>
+                <li><a href="fertilizer.html">การใส่ปุ๋ย</a></li>
+                <li><a href="water.html">การให้น้ำ</a></li>
+                <li style="background-color: rgb(0, 170, 70);"><a href="plant.html">ตัวอย่างพันธุ์ไม้</a></li>
+                <li><a href="index.html"><img src="ex/home.png" width="20px" height="16px"></a></li>
+            </ul>
+    </div>
+    <!-- <div class="top-content">
+        <div class="container_t"></div>
+        <div class="container_t"></div>
+    </div> -->
+    <!-- div for adding content -->
+    <div id="plant" class="plant_example">
+        <figure>
+            <img src="ex/mango-3.jpg">
+            <figcaption><font size="6">มะม่วง<br></font> 
+                <p>&emsp;มะม่วงเป็นไม้ยืนต้นในสกุล Mangifera ซึ่งเป็นไม้ผลเมืองร้อนในวงศ์ Anacardiaceae (กลุ่มเดียวกับถั่วพิสตาชีโอและมะม่วงหิมพานต์) ชื่อวิทยาศาสตร์: Mangifera indica เป็นพืชที่มีถิ่นกำเนิดในอินเดีย เพราะการที่ภูมิภาคนั้นมีความหลากหลายทางพันธุกรรมและร่องรอยฟอสซิลที่หลากหลาย นับย้อนไปได้ถึง 25-30 ล้านปีก่อน มะม่วงมีความแตกต่างประมาณ 49 สายพันธุ์กระจายอยู่ตามประเทศในเขตร้อนตั้งแต่อินเดียไปจนถึงฟิลิปปินส์ จากนั้นจึงแพร่หลายไปทั่วโลก เป็นไม้พุ่มขนาดกลาง ใบโต ยาว ปลายแหลม ขอบใบเรียบ ใบอ่อนสีแดง ออกดอกเป็นช่อตามปลายกิ่ง ดอกขนาดเล็ก สีขาว ผลอ่อนสีเขียว ผลแก่สีเหลือง เมล็ดแบน เปลือกหุ้มเมล็ดแข็ง</p>
+                <p>&emsp;มะม่วงเป็นผลไม้เศรษฐกิจ ปลูกเป็นพืชสวน ประเทศไทยส่งออกมะม่วงเป็นอันดับ 3 รองจากฟิลิปปินส์ และเม็กซิโก เป็นผลไม้ประจำชาติของอินเดีย ปากีสถาน และฟิลิปปินส์ รวมทั้งบังกลาเทศ</p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <!-- div for footer -->
+    <footer class="footer">
+
+        <p class="content1">-Contact Us-</p>
+
+        <p class="content2">
+            <a href="https://www.facebook.com/Plant-Time-213447256090531"><img src="ex/fb.png" height="30px" width="30px"></a>
+            .
+            <a href="https://www.instagram.com/pischyd/"><img src="ex/ig.png" height="30px" width="30px"></a>
+            .
+            <a href="https://twitter.com/PlantTime1"><img src="ex/tt.png" height="30px" width="30px"></a>
+        </p>
+
+        <p class="content3"><a href="https://www.facebook.com/glass123451">60070009 นายจิรพัส วงษ์พิทักษ์</a><br><a href="https://www.facebook.com/shiroi.youkai">60070033 นางสาว ธารินี แก้วประยูร</a><br><a href="https://www.facebook.com/pitchayutramudramyai">60070063 นาย พิชญุตม์ เดชหนู</a></p>
+        <p>Credit: verdeambienteorosei.com, wallpaperscraft.com</p>
+    </footer>
+
+    <!-- cursor for going to top page -->
+    <div id="go-top">
+        <a href="#top-page"><img src="ex/top.png" width="50px" height="50px"></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var documentEl = $(document),
+                fadeElem = $('.fade');
+                
+                
+                documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+                    
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                }); 
+            });
+                
+        });
+        
+    </script>
+</body>
+</html>

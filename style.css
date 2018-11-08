@@ -4,7 +4,8 @@ html{
 
 body{
     margin: 0;
-    background-image: url("plant3_blur.jpg");
+    overflow-x: hidden;
+    background-image: url("ex/plant3_blur.jpg");
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Prompt', sans-serif;
@@ -14,15 +15,26 @@ body{
 #top-page{
     text-align: center;
     color: white;
-    background-image: url("plant2.jpg");
+    background-image: url("ex/plant2.jpg");
     background-size: cover;
     height: 100vh;
     display: block;
     background-repeat: no-repeat;
 }
 
+#top-page div{
+    padding: 10vh 0 0 0;
+}
+
+/*set text in top-page*/
 #top-page p{
-    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    font-size: 90px;
+}
+
+.fade p{
+    text-shadow: 2px 2px #8f9296;
 }
 
 /*set header*/
@@ -31,7 +43,7 @@ body{
     margin: 0;
     overflow: hidden;
     background-color: rgb(64, 64, 64);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /*make item float left*/
@@ -52,38 +64,6 @@ body{
 #header ul li a:hover {
     background-color: rgb(0, 170, 70);
     transition: 0.5s;
-}
-
-/*set content*/
-#content{
-    margin: 10px;
-    padding: 10px;
-    background: rgb(92, 92, 92)
-}
-
-/*set footer*/
-#footer{
-    margin: 0;
-    background-color: white;
-    text-align: center;
-    height: 200px;
-    opacity: 0.8;
-}
-
-/*icon footer*/
-#footer p{
-    margin: 0;
-    display: inline-block;
-    padding: 75px 0 0 0;\
-}
-
-#footer p img{
-    opacity: 0.7;
-}
-
-#footer p img:hover{
-    opacity: 1;
-    /*transition: 0.3s;*/
 }
 
 /*for adding to header*/
@@ -117,29 +97,335 @@ body{
 }
 
 /*set margin for content when scrolling*/
-/*.mar{
-    margin: 61px 10px 10px 10px !important;
+.mar{
+    margin-top: 10vh !important;
+}
+
+/*.top-content{
+    width: 50vw;
+    height: 50vh;
+}
+
+.container_t{
+    width: 49%;
+    height: 50vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
 }*/
 
+/*set footer*/
+.footer{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 45px;
+    margin-top: 80px;
+    opacity: 0.9;
+}
 
-.test{
+/*set footer text Contact*/
+.footer .content1{
+    color:  #8d9093;
+    font-size: 24px;
+    margin: 0;
+}
+
+/*set footer img link*/
+.footer .content2{
+    padding: 35px 0 23px;
+    margin: 0;
+}
+
+/*set footer img link*/
+.footer .content2 a{
+    display: inline-block;
+    opacity: 0.7;
+}
+
+/*set footer img link hover*/
+.footer .content2 a:hover{
+    opacity: 1;
+}
+
+/*set footer student name*/
+.footer .content3{
+    margin: 0;
+}
+
+.footer .content3 a{
+    text-decoration: none;
+    color:  #8f9296;
+    font-size: 14px;
+}
+
+.footer .content3 a:hover{
+    transition: 0.5s;
+    color:  #000000;
+}
+
+
+/*set content*/
+#content{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(204, 204, 204);
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+/*set content for plant file*/
+/*#plant{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(204, 204, 204);
+    opacity: 1;
+    border-radius: 10px;
+}*/
+
+/*set content in water file*/
+#watering{
+    margin: 10px;
+    padding: 10px;
+    width: 100vw;
+    height: 140vh;
+}
+
+.container_t1_water{
+    padding: 10px;
+    float: left;
+    width: 60%;
+    height: 140vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container_t2_water{
+    padding: 10px;
+    float: left;
+    width: 33%;
+    height: 140vh;
+    background: rgb(92, 92, 92);
+    display: inline-block;
+    opacity: 0.8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*set content in fertilizer file*/
+#fertilizing{
+    margin: 10px;
+    padding: 10px;
+    width: 100vw;
+    height: 150vh;
+}
+
+.container_t1_fertilizer{
+    padding: 10px;
+    float: left;
+    width: 60%;
+    height: 150vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container_t2_fertilizer{
+    padding: 10px;
+    float: left;
+    width: 33%;
+    height: 150vh;
+    background: rgb(92, 92, 92);
+    display: inline-block;
+    opacity: 0.8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fertilizing_new{
+    margin: 10px;
+    padding: 10px;
+    width: 100vw;
+    height: 60vh;
+}
+
+.container_t3_fertilizer{
+    padding: 10px;
+    float: left;
+    width: 33%;
+    height: 60vh;
+    background: rgb(92, 92, 92);
+    display: inline-block;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container_t4_fertilizer{
+    padding: 10px;
+    float: left;
+    width: 60%;
+    height: 60vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*set content in dirt file*/
+#earth{
+    margin: 10px;
+    padding: 10px;
+    width: 100vw;
+    height: 220vh;
+}
+
+.container_t1_dirt{
+    padding: 10px;
+    float: left;
+    width: 60%;
+    height: 220vh;
+    background: rgb(92, 92, 92);
+    display: inline-block;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container_t2_dirt{
+    padding: 10px;
+    float: left;
+    width: 33%;
+    height: 220vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*set content in kill file*/
+#pest{
+    margin: 10px;
+    padding: 10px;
     width: 100vw;
     height: 50vh;
 }
 
-.container_t1{
+.container_t5{
+    padding: 10px;
     float: left;
-    width: 39%;
+    width: 31%;
     height: 50vh;
     background: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container_t6{
+    padding: 10px;
+    float: left;
+    width: 30.5%;
+    height: 50vh;
+    background: rgb(92, 92, 92);
     display: inline-block;
     opacity: 0.8;
 }
-.container_t2{
-    float: right;
-    width: 60%;
+
+.container_t7{
+    padding: 10px;
+    float: left;
+    width: 30%;
     height: 50vh;
     background: white;
     display: inline-block;
     opacity: 0.8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*content in plant file*/
+.plant {
+    column-width: 320px;
+    column-gap: 15px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #8f9296;
+}
+
+#column {
+    column-width: 320px;
+    column-gap: 15px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 10px auto;
+}
+
+div#column figure {
+    background: #fefefe;
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0 2px 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    transition: opacity .4s ease-in-out;
+    display: inline-block;
+}
+
+div#column figure img {
+    width: 100%; height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+div#column figure figcaption {
+    font-size: .9rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+div#column:hover figure:not(:hover) {
+    opacity: 0.4;
+}
+
+.plant_example{
+    margin: 10px;
+    text-align: center;
+}
+
+.plant_example figure{
+    /*background: #ECF0F1;*/
+    /*border: 2px solid #fcfcfc;*/
+    box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
+    margin: auto 10vw;
+    padding: 15px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.plant_example figure img {
+    /*border-radius: 10px;*/
+    padding: 10px;
+    /*background-color: white;*/
+    width: 40%; height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.plant_example figure ul {
+    text-align: left;
+}
+
+.plant_example figure p {
+    text-align: left;
 }

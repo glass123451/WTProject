@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo-green.png">
+    <link rel="shortcut icon" href="ex/logo_green.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
-    <script type="text/javascript" src="event.js"></script>
+    <script type="text/javascript" src="event_file/event_water.js"></script>
     <title>PlantTime</title>
 </head>
 
 <body>
     <!-- div for top of the page -->
     <div id="top-page">
-        <img src="logo-white.png">
-        <p>การดูแลรักษาพืช</p>
+        <div class="fade">
+            <img src="ex/logo_white.png" height="300px">
+            <p>การดูแลรักษาต้นไม้</p>
+        </div>
     </div>
 
     <!-- check position-->
@@ -23,31 +25,87 @@
 
     <!-- div for header -->
     <div id="header">
-        <ul>
-            <li><a href="kill.html">กำจัดศัตรูพืช</a></li>
-            <li><a href="dirt.html">ดิน</a></li>
-            <li><a href="fertilizer.html">ใส่ปุ๋ย</a></li>
-            <li style="background-color: rgb(0, 170, 70);"><a href="#">ให้น้ำ</a></li>
-            <li><a href="plant.html">ตัวอย่างพันธุ์ไม้</a></li>
-            <li><a href="index.html"><img src="home.png" width="20px" height="16px"></a></li>
-        </ul>
+            <ul>
+                <li><a href="kill.html">กำจัดศัตรูพืช</a></li>
+                <li><a href="dirt.html">การเลือกดิน</a></li>
+                <li><a href="fertilizer.html">การใส่ปุ๋ย</a></li>
+                <li style="background-color: rgb(0, 170, 70);"><a>การให้น้ำ</a></li>
+                <li><a href="plant.html">ตัวอย่างพันธุ์ไม้</a></li>
+                <li><a href="index.html"><img src="ex/home.png" width="20px" height="16px"></a></li>
+            </ul>
     </div>
-
+    <!-- <div class="top-content">
+        <div class="container_t"></div>
+        <div class="container_t"></div>
+    </div> -->
     <!-- div for adding content -->
-    <div id="content">
-        
-    </div>
+    <div id="watering">
+            <div class="container_t1_water">
+                <p><b><font size="7">การให้น้ำ</font></b><br></p>
+                    <p>&emsp;ปกติการให้น้ำต้นไม้เป็นสิ่งสำคัญ เพราะการให้น้ำมากเกินไป น้อยเกินไป หรือให้น้ำไม่ถูกวิธีสิ่งเหล่านี้ล้วนเป็นผลกระทบต่อการเจริญเติบโตของพืชเหมือนกัน ซึ่งก็ขึ้นอยู่กับ ชนิดของพรรณพืช สภาพของดิน หรือเครื่องปลูก สภาพแวดล้อม เช่น ในร่ม กลางแจ้ง มีลมพัดผ่านหรือไม่ อุณหภูมิ และฤดูกาล เป็นต้น
+                    ถ้าพืชได้รับน้ำน้อยเกินไปจะทำให้ใบเหี่ยว เนื่องจากน้ำในดินมีไม่พอให้รากดูดไปเลี้ยงลำต้น ช่วงเวลาใกล้เที่ยงถึงบ่าย 3 โมงเย็น เป็นช่วงที่อากาศร้อนจัดพืชจะคายน้ำมาก เมื่อคายน้ำมากแล้วรากต้องดูดน้ำมาชดเชยให้กับใบที่เสียน้ำไปกับอากาศ ถ้าชดเชยไม่ทันก็จะทำให้ใบเหี่ยว
+                    ถ้าน้ำมากจนเต็มช่องว่างทั้งหมดของดิน และไล่อากาศออกทำให้ดินอิ่มตัวจนเกิดน้ำขัง ก็จะไม่เหมาะกับการเจริญเติบโตของพืช เพราะจะทำให้พืชขาดออกซิเจน ซึ่งเป็นสิ่งจำเป็นในการหายใจของราก ถ้าดินมีน้ำขังเพียง 2–3 วัน พืชจะมีอาการเหี่ยวทั้งๆ ที่ไม่ขาดน้ำบางชนิดอาจตายได้ แต่ในทางกลับกันถ้าพืชได้รับน้ำน้อยเกินไปต้นก็เหี่ยวเฉา 
+                    </p>
+            </div>
+            <div class="container_t2_water">
+                <p><b>วิธีการให้น้ำ</b><br></p>
+                <p>1. ควรรดน้ำที่โคนต้น อย่าใช้วิธีฉีดทั้งใบ เพราะจะทำให้พุ่มและใบกระจ่ายล้มได้ และทำให้น้ำกระจายออกนอกกระถาง ทำให้น้ำไม่ถึงระดับราก</p>
+                <p>2. ถ้าดินแห้งหดตัวหนีขอบกระถาง ทำให้น้ำไหลลงรูที่ก้นกระถางหมด และไม่ชุ่มถึงระดับราก ควรพรวนดินให้ฟูก่อนแล้งค่อนรดน้ำให้ชุ่ม</p>
+                <p>3. ควรใช้น้ำที่ไม่แรง รดช้าๆ จนชุ่ม ไม่ควรฉีดน้ำแรงมาก เพราะจะทำให้น้ำชะหน้าดินออกจากกระถางทำให้รากลอย และแห้งได้</p>
+                <p>4. ช่วงเวลาที่เหมาะสม โดยปกติแล้วควรรดน้ำต้นไม้วันละ 2 ครั้ง ในช่วงเช้าหรือเย็นที่อากาศไม่ร้อนเกินไป ตอนเช้าควรรดขณะที่ยังมีแดดอ่อนๆ ประมาณ 6.00 น. – 8.00 น. ส่วนตอนเย็นควรรดน้ำก่อนพระอาทิตย์ตกประมาณ 16.00 น. – 18.00 น. เพื่อให้น้ำในดินระเหยออกไปบ้างบางส่วน ไม่เก็บความชื้นไว้มากเกินไป</p>
+                <p>5. การรดน้ำตามฤดูกาล
+                    <ul>
+                        <li>ช่วงหน้าร้อนอุณหภูมิของน้ำที่ค้างอยู่ในท่อหรือแท็งก์น้ำจะค่อนข้างสูง เมื่อเปิดก๊อกรดน้ำลงไปก็ไม่ต่างอะไรกับการเอาน้ำร้อนมารดต้นไม้ จึงควรนำน้ำไปพักในถังให้เย็นตัวลงก่อนแล้วรดที่บริเวณโคนต้น เพื่อไม่ให้เกิดหยดน้ำตกค้างบนใบซึ่งอาจทำให้เกิดปัญหาใบไหม้ตามมาได้ โดยรดให้ชุ่มตั้งแต่เรือนยอดต้นไม้ลงมาชะล้างสิ่งสกปรกตกค้างบนใบ จะช่วยเพิ่มประสิทธิภาพการดูดซับน้ำ และลดการคายน้ำ แถมยังช่วยให้การสังเคราะห์แสงดีขึ้นด้วย</li>
+                        <li>ในช่วงฤดูฝนให้รดน้ำตามความเหมาะสม ฝนตกก็ใช่ว่าจะไม่ต้องรดน้ำต้นไม้ เพราะปริมาณน้ำฝนอาจไม่เพียงพอที่จะซึมลงถึงราก จึงจำเป็นต้องให้น้ำเพิ่มเติม</li>
+                        <li>ขณะเดียวกันในช่วงฤดูหนาว อากาศแห้งเราก็จำเป็นต้องรดน้ำให้ถี่ขึ้น หรือให้น้ำแบบสปริงเกลอร์ โดยเว้นช่วงให้ผิวดินแห้งบ้าง เพื่อให้รากพืชได้หายใจ หากดินยังชื้นอยู่ก็ไม่จำเป็นต้องรดน้ำซ้ำ แม้ว่าช่วงฤดูหนาวสั้นๆ ของบ้านเราอากาศจะแห้ง แต่น้ำในดินก็ไม่ระเหยเร็วเท่าฤดูร้อน ดังนั้นต้องคอยสังเกตให้ดี เพราะถ้าให้น้ำมากเกินความจำเป็นอาจเกิดโรคพืชตามมาได้ นอกจากนี้ยังมีวิธีรักษาความชื้นในดินด้วยการใช้วัสดุ เช่น ฟางข้าว ขุยมะพร้าวสับ ใบไผ่ ใบไม้สดหรือแห้ง คลุมแปลงปลูก</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
 
     <!-- div for footer -->
-    <div id="footer">
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="fb.png" width="25px" height="25px"></a></p>
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="ig.png" width="25px" height="25px"></a></p>
-        <p><a href="https://www.facebook.com/pitchayutramudramyai"><img src="tt.png" width="25px" height="25px"></a></p>
-    </div>
+    <footer class="footer">
+
+        <p class="content1">-Contact Us-</p>
+
+        <p class="content2">
+            <a href="https://www.facebook.com/Plant-Time-213447256090531"><img src="ex/fb.png" height="30px" width="30px"></a>
+            .
+            <a href="https://www.instagram.com/pischyd/"><img src="ex/ig.png" height="30px" width="30px"></a>
+            .
+            <a href="https://twitter.com/PlantTime1"><img src="ex/tt.png" height="30px" width="30px"></a>
+        </p>
+
+        <p class="content3"><a href="https://www.facebook.com/glass123451">60070009 นายจิรพัส วงษ์พิทักษ์</a><br><a href="https://www.facebook.com/shiroi.youkai">60070033 นางสาว ธารินี แก้วประยูร</a><br><a href="https://www.facebook.com/pitchayutramudramyai">60070063 นาย พิชญุตม์ เดชหนู</a></p>
+        <p>Credit: verdeambienteorosei.com, wallpaperscraft.com</p>
+    </footer>
 
     <!-- cursor for going to top page -->
     <div id="go-top">
-        <a href="#top-page"><img src="top.png" width="50px" height="50px"></a>
+        <a href="#top-page"><img src="ex/top.png" width="50px" height="50px"></a>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var documentEl = $(document),
+                fadeElem = $('.fade');
+                
+                
+                documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+                    
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                }); 
+            });
+                
+        });
+        
+    </script>
 </body>
 </html>

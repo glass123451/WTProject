@@ -1,0 +1,233 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    /*background-image: url("ex/plant3_blur.jpg");*/
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Prompt', sans-serif;
+}
+
+/*set top page*/
+#top-page{
+    text-align: center;
+    color: white;
+    background-image: url("ex/plant2.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: block;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#top-page div{
+    padding: 10vh 0 0 0;
+}
+
+/*set text in top-page*/
+#top-page p{
+    margin: 0;
+    padding: 0;
+    font-size: 90px;
+}
+
+.fade p{
+    text-shadow: 2px 2px #8f9296;
+}
+
+/*set header*/
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(64, 64, 64);
+    opacity: 0.9;
+}
+
+/*make item float left*/
+#header ul li {
+    float: right;
+}
+
+/*set each item*/
+#header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+/* change background color when mouse pointing each item*/
+#header ul li a:hover {
+    background-color: rgb(0, 170, 70);
+    transition: 0.5s;
+}
+
+/*for adding to header*/
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+/*go back to top*/
+#go-top{
+    top: 90%;
+    left: 95%;
+    position: fixed;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+/*to set visible for go-top*/
+.visible{
+    visibility: visible !important;
+    background-color: rgb(0, 170, 70);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/*mouse pointing for go-top*/
+#go-top:hover{
+    opacity: 1;
+}
+
+/*set margin for content when scrolling*/
+.mar{
+    margin-top: 10vh !important;
+}
+
+/*.top-content{
+    width: 50vw;
+    height: 50vh;
+}
+
+.container_t{
+    width: 49%;
+    height: 50vh;
+    background: white;
+    display: inline-block;
+    opacity: 0.8;
+}*/
+
+/*set footer*/
+.footer{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 45px;
+    margin-top: 0px;
+    opacity: 0.9;
+    box-shadow: 2px 2px black;
+}
+
+/*set footer text Contact*/
+.footer .content1{
+    color:  #8d9093;
+    font-size: 24px;
+    margin: 0;
+}
+
+/*set footer img link*/
+.footer .content2{
+    padding: 35px 0 23px;
+    margin: 0;
+}
+
+/*set footer img link*/
+.footer .content2 a{
+    display: inline-block;
+    opacity: 0.7;
+}
+
+/*set footer img link hover*/
+.footer .content2 a:hover{
+    opacity: 1;
+}
+
+/*set footer student name*/
+.footer .content3{
+    margin: 0;
+}
+
+.footer .content3 a{
+    text-decoration: none;
+    color:  #8f9296;
+    font-size: 14px;
+}
+
+.footer .content3 a:hover{
+    transition: 0.5s;
+    color:  #000000;
+}
+
+/*set content*/
+#content{
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    background: rgb(204, 204, 204);
+    /*opacity: 0.8;*/
+    /*border-radius: 10px;*/
+}
+
+.pallax1{
+    background-size: cover;
+    background-image: url("ex/flower_dark.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 140vh;
+    overflow: hidden;
+}
+
+.inner_pal1{
+    color: white;
+    margin-top: 3vh;
+    margin-left: 10vw;
+    padding: 10px;
+    width: 40%;
+    height: 130vh;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+    /*background: rgb(92, 92, 92);*/
+/*    display: inline-block;*/
+}
+
+.pallax2{
+    background-size: cover;
+    background-image: url("ex/flower_dark2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 220vh;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.inner_pal2{
+    color: white;
+    margin-left: 10vw;
+    padding: 10px;
+    width: 30%;
+    overflow: hidden;
+    /*background: rgb(92, 92, 92);*/
+/*    display: inline-block;*/
+}
+
+.inner_pal2_con{
+    color: white;
+    margin-top: 3vh;
+    margin-left: 9.85vw;
+    padding: 10px;
+    width: 40%;
+    height: 210vh;
+    overflow: hidden;
+    border-left: 1px solid #ccc;
+    /*background: rgb(92, 92, 92);*/
+/*    display: inline-block;*/
+}
